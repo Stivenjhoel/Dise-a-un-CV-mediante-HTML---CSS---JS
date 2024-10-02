@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Wrapper */
+.cv-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 350px;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #f1faee;
+}
+
+.profile h1 {
+    margin: 10px 0 0;
+    font-size: 26px;
+}
+
+.profile p {
+    font-size: 18px;
+    color: #f1faee;
+    margin-bottom: 20px;
+}
+
+.contact-info, .skills {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.contact-info h2, .skills h2 {
+    font-size: 20px;
+    color: #f1faee;
+    border-bottom: 2px solid #a8dadc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul, .skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul li, .skills ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-info ul li strong, .skills ul li strong {
+    color: #f1faee;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 60px;
+    background-color: #f1faee;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    color: #1d3557;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.main-content h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #e63946;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #457b9d;
+}
+
+.job, .degree {
+    margin-top: 30px;
+}
+
+.job h3, .degree h3 {
+    font-size: 22px;
+    color: #1d3557;
+    margin-bottom: 5px;
+}
+
+.job p, .degree p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #457b9d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .main-content {
+        padding: 40px 20px;
+    }
+}
